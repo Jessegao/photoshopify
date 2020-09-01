@@ -1,9 +1,17 @@
-const express = require('express');
-
-
+const express = require("express");
+const { graphqlHTTP } = require("express-graphql");
+const schema = require("./schema");
 
 const app = express();
-const port = 4000
-app.listen(port, ()=>{ console.log("Server opened at port:", port) })
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema,
+    graphiql: true,
+  })
+);
 
-
+const port = 4000;
+app.listen(port, () => {
+  console.log("Server opened at port:", port);
+});

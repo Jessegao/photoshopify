@@ -18,25 +18,22 @@ A web app for photographers showcasing their work.
 
 # Technology
 
-* Frontend framework: React
-* Interface React with GraphQL: Apollo
-* UI Component Framework: Material-UI
-* Host/Deploy frontend: Netlify
-* Runtime Environment: Node.js
-* Backend Web Framework: Express.js
-* API Query Language: GraphQL
-* Host/Deploy Backend: AWS EC2 Instance
-* Storage for photos: AWS S3 Bucket
-* Database System: PostgreSQL
-* ...
+- Frontend framework: React
+- Interface React with GraphQL: Apollo
+- UI Component Framework: Material-UI
+- Host/Deploy frontend: Netlify
+- Runtime Environment: Node.js
+- Backend Web Framework: Express.js
+- API Query Language: GraphQL
+- Host/Deploy Backend: AWS EC2 Instance
+- Storage for photos: AWS S3 Bucket
+- Database System: PostgreSQL
+- ...
 
 ## Authors
 
-* Software-Developer: **Martin Magsombol**
-
+- Software-Developer: **Martin Magsombol**
 
 ## License
 
 MIT LICENSE
-
-
