@@ -1,17 +1,11 @@
-const express = require("express");
-const { graphqlHTTP } = require("express-graphql");
-const schema = require("./schema");
+const { ApolloServer, gql } = require("apollo-server");
+const typeDefs = require("./schema");
+const resolvers = require("./resolvers");
 
-const app = express();
-app.use(
-  "/graphql",
-  graphqlHTTP({
-    schema,
-    graphiql: true,
-  })
-);
+// Create instance of ApolloServer
+const server = new ApolloServer({ typeDefs, resolvers });
 
-const port = 4000;
-app.listen(port, () => {
-  console.log("Server opened at port:", port);
+// Run Server
+server.listen().then(({ url }) => {
+  console.log(`Server ready at ${url}`);
 });

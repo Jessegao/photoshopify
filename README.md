@@ -32,7 +32,10 @@ A web app for photographers showcasing their work.
 
 ## Authors
 
-- Software-Developer: **Martin Magsombol**
+- Software Engineer: **Martin Magsombol**
+- Software Engineer: **Jesse Gao**
+- Project Manager: **Anthony Nguyen**
+- Visual Designer: **Johann Banta**
 
 ## License
 
