@@ -2,6 +2,7 @@ const User = require("../models/UserModel");
 
 module.exports = {
   Query: {
+    user: (parent, args) => User.findByPk(args.id),
     users: () => User.findAll(),
   },
 
@@ -16,5 +17,6 @@ module.exports = {
       });
       return user.save();
     },
+    // deleteUser: (parent, args) => {},
   },
 };

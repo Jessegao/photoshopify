@@ -6,7 +6,14 @@ module.exports = `
   }
 
   type Query {
-    photo(id: ID!): User
-    photos: [User]
+    photo(id: ID!): Photo
+    photos: [Photo]
+  }
+
+  type Mutation {
+    addPhoto(
+      filepath: String!,
+      userid: ID!
+    ): Photo
   }
 `;

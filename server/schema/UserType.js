@@ -8,6 +8,7 @@ module.exports = `
     lastname: String
     createdat: String!
     updatedat: String!
+    photos: [Photo]
   }
 
   type Query {

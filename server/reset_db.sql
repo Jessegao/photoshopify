@@ -11,6 +11,17 @@ CREATE TABLE IF NOT EXISTS Users (
   PRIMARY KEY(id)
 );
 
+CREATE TABLE IF NOT EXISTS Photos (
+  id SERIAL NOT NULL,
+  filepath TEXT NOT NULL,
+  userId INT,
+  tags TEXT[],
+  createdAt DATE NOT NULL DEFAULT NOW(),
+  PRIMARY KEY(id),
+  CONSTRAINT fk_photo
+    FOREIGN KEY (userId) REFERENCES Users(id)
+);
+
 -- DUMMY DATA
 INSERT INTO Users(username, password, firstname, lastname, email)
 VALUES ('magsu', '1234', 'Martin', 'Magsombol', 'martinremags@gmail.com');

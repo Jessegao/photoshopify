@@ -38,4 +38,9 @@ const User = sequelize.define(
   }
 );
 
+User.associate = (models) => {
+  User.hasMany(models.Photo, {
+    onDelete: "cascade",
+  });
+};
 module.exports = User;
