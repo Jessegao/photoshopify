@@ -23,9 +23,9 @@ A web app for photographers showcasing their work.
 - UI Component Framework: Material-UI
 - Host/Deploy frontend: Netlify
 - Runtime Environment: Node.js
-- Backend Web Framework: Express.js
+- Backend Web Framework: Apollo-Express
 - API Query Language: GraphQL
-- Host/Deploy Backend: AWS EC2 Instance
+- Host/Deploy Backend: AWS EC2 Instance/Heroku
 - Storage for photos: AWS S3 Bucket
 - Database System: PostgreSQL
 - ...
